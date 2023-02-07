@@ -1,0 +1,14 @@
+name: run on released
+
+on:
+  workflow_dispatch:
+  release:
+    types:
+      - published
+      - released
+
+jobs:
+  say_release:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "released!"
