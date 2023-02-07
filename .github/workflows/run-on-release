@@ -1,10 +1,10 @@
-name: Run on release develop
+name: Run on release
 
 on: 
   workflow_dispatch:
   push:
     tags:        
-      - 'v*'
+      - *
 
 jobs:
   say_release:
