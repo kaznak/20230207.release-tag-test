@@ -8,7 +8,7 @@ on:
       - prereleased
 
 jobs:
-  say_release:
+  say_prerelease:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Released on ${GITHUB_REF#refs/heads/}!"
+      - run: echo "prereleased!"
