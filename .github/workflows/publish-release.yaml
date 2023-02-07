@@ -1,4 +1,4 @@
-name: run on prereleased(published)
+name: run on when a release is published
 
 # trigger on:
 # - stright publish as release or prerelease
