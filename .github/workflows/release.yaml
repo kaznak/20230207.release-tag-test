@@ -1,0 +1,14 @@
+name: run on prereleased
+
+on:
+  workflow_dispatch:
+  release:
+    types:
+      - published
+      - prereleased
+
+jobs:
+  say_release:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Released on ${GITHUB_REF#refs/heads/}!"
