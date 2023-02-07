@@ -7,7 +7,7 @@ on:
       - 'v*'
 
 jobs:
-  say_hello:
+  say_release:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Released on ${GITHUB_REF#refs/heads/}!"
