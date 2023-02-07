@@ -1,14 +1,14 @@
-name: run on released
+name: run on prereleased
 
 on:
   workflow_dispatch:
   release:
     types:
       - published
-      - released
+      - prereleased
 
 jobs:
-  say_release:
+  say_prerelease:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "released!"
+      - run: echo "prereleased!"
