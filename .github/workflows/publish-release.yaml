@@ -1,0 +1,20 @@
+name: run on when a release is published
+
+# trigger on:
+# - stright publish as release or prerelease
+# - publish from draft as release or prerelease
+# not trigger on:
+# - promote from prerelease to release
+# - create 
+
+on:
+  workflow_dispatch:
+  release:
+    types:
+      - published
+
+jobs:
+  say_prerelease:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "prereleased!"
